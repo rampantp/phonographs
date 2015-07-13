@@ -1,0 +1,64 @@
+*{
+color: #000000;
+}
+
+h2{
+	color: white;
+}
+
+body{
+	background-color:#622A1D;
+}
+.form{
+	padding: 5px,0,5px,0;
+}
+#message-box{
+	padding: 10px, 0, 10px, 0;
+	margins: 5px;
+}
+p { 
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+}
+header {
+	border:8px solid gold;
+	background-image:url(images/victor_ian.jpg);
+	padding: 10px 30px 5px 0;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+}
+footer{
+	border:8px solid gold;
+	margin-top: 10px;
+	width: 100%;
+	padding: 10px 30px 5px 0;
+	height: 150px;
+	background-image:url(images/victor_ian.jpg);
+}
+nav{
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+	text-align:center;
+	word-spacing: 3em;
+}
+
+nav a{
+	color: white;
+}
+nav a:hover{
+	color: blue;
+}
+	
+nav ul{
+	text-decoration: none;
+}
+nav ul li{
+	display: inline-block;
+}
+.special2{
+	word-spacing: 0;
+}	
