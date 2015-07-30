@@ -52,6 +52,18 @@ nav ul{
 nav ul li{
 	display: inline-block;
 }
+
+.note{
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: white;
+	font-size: 20px;
+	text-align:center;
+	border: 3px gold solid;
+	border-radius: 15px;
+	margin-top:5%;
+	margin-bottom:3%;
+}
+
 .special2{
 	word-spacing: 0;
 }	
@@ -59,13 +71,19 @@ nav ul li{
 /*Begin gallery CSS*/
 
 	.thumbnails img {
-		height: 80px;
+		height: 300px;
+		width:300px;
 		border: 4px solid #555;
 		padding: 1px;
 		margin: 0 10px 10px 0;
 	}
 
 	.thumbnails img:hover {
+		border: 4px solid #00ccff;
+		cursor:pointer;
+	}
+	
+	.thumbnails img:click {
 		border: 4px solid #00ccff;
 		cursor:pointer;
 	}
@@ -78,8 +96,15 @@ nav ul li{
 	}
 /*End Gallery CSS*/
 
-.caption{
-	display: block;
-}
+figure figcaption{
+	text-align:center;
+	margin: 10px, 10px, 10px, 10px;
+	padding:5px,5px,5px,5px;
+	border: solid black 3px;
+	border-radius: 45px;
+	background-color: #FAEBD7;
+	width: 50em;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	}
 
 

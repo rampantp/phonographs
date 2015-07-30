@@ -38,6 +38,66 @@ footer{
 	height: 150px;
 	background-image:url(images/victor_ian.jpg);
 }
+
+.special1{
+	list-style: none;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+	border-radius: 30px;
+}
+
+.special2 {
+	list-style: none;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+	border-radius: 30px;
+}
+
+.special3{
+	list-style: none;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+	border-radius: 30px;
+}
+.special4 {
+	list-style: none;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+	border-radius: 30px;
+}
+
+.special5 {
+	list-style: none;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+	border-radius: 30px;
+}
+
+.special6 {
+	list-style: none;
+	margin-bottom: 3%;
+	margin-top: 3%;
+	font-family:Verdana,"Times New Roman", Arial, sans-serif;
+	color: black;
+	font-size: 20px;
+	border-radius: 30px;
+}
+
 nav{
 	font-family:Verdana,"Times New Roman", Arial, sans-serif;
 	color: black;

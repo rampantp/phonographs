@@ -3,12 +3,34 @@
 <html>
 <title>Contact Page  </title>
 <head>
-<LINK REL="stylesheet" TYPE="text/css" HREF="contact.css">
-<script src="../_js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="contact.css">
+<script  type="text/javascript">
 $(document).ready(function() {
 	$(':text:first').focus();
+}, 
+$('#contact').validate({
+rules: {
+     email: {
+        required: true,
+        email: true
+     }
+messages: {
+      email: {
+         required: "Please supply an e-mail address.",
+         email: "This is not a valid email address."
+       }
+
+errorPlacement: function(error, element) { 
+       if ( element.is(":radio") || element.is(":checkbox")) {
+          error.appendTo( element.parent()); 
+        } else {
+          error.insertAfter(element);
+        } 	   
+  }); // end validate 
 }); // end ready
-<script  type="text/javascript">
+
+
+
  
  
 </script>
@@ -18,36 +40,39 @@ $(document).ready(function() {
 <h2>Contact</h2>
 </hgroup>
 </header>
+
+</head>
+<body>
+
 <nav>
 <ul>
 <li class="special2"><a href="index.html">Home Page</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="photogallery.html">Gallery</a></li>
-<li><a href="contact">Contact</a></li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 </nav>
-</head>
-<body>
+
 <ul>
 <form action="process.php" method="post" name="contact" id="contact">
 <div class="form" align= "center">
-<div>
+<div class=special1>
 <label for="name" class="label">Name</label>
-<li><input name="name" type="text" class="required" title="Please provide a name" id="name" size="40" ></li>
+<li><input name="name" type="text" class="required" title="Please provide a name" id="name" size="40" autofocus ></li> 
 </div>
 
-<div>
+<div class=special2>
 <label for="email" class="label">Email</label>
 <li><input type="email" type="text" class="required" title="Please provide an email address" id="email" size="40"></li>
 </div>
 
-<div>
+<div class=special3>
 <label for="Address" class="label">Address(Optional)</label>
 <li><input type="Address" type="text" id="Address" size="40"></li>
 </div>
 
-<div>
+<div class=special4>
 <span class="label"<=>Location</span>
 <input type="checkbox" name="location" id="united states" value="united states">
 <label for="united states">United States</label>
@@ -56,10 +81,12 @@ $(document).ready(function() {
 <input type="checkbox" name="location" id="other" value="other">
 <label for="other">Other</label>
 
-<label for="message-box" class="label">Type your message here<</label>
-<li><input type="message-box" type="text" class="required" title="Write your message here" id="message-box" size="100"></li>
-
+<div class=special5>
+<label for="comments" class="label">Comments</label>
+<textarea name="comments" cols="55" rows="10" id="comments"></textarea>
 </div>
+
+<div class=special6>
 <li><input type="Submit" name="Submit" id="Submit" value="Submit"></li>
 </div>
 </form>
